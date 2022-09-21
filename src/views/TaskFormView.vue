@@ -81,7 +81,18 @@ export default {
   }),
   methods: {
     addTask() {
-      TaskApi.createTask(() => {});
+      this.loading = true;
+      const newTask = {
+        title: this.task.title,
+        project: this.project,
+        date: this.task.date,
+      };
+      console.log(newTask);
+      TaskApi.createTask((newTask) => {
+        console.log("iuyftg", newTask);
+        this.$router.push({ name: "list" });
+      });
+      this.loading = false;
     },
   },
 };

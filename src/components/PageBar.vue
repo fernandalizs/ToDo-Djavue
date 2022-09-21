@@ -68,13 +68,13 @@ export default {
       drawer: false,
       theme: { dark: false },
       items: [
-        { title: "Home", icon: "mdi-home", routes: "home" },
-        { title: "Resumo", icon: "mdi-view-dashboard", routes: "info" },
-        {
-          title: "Adicionar Projeto",
-          icon: "mdi-folder-plus",
-          routes: "projectForm",
-        },
+        { title: "Home", icon: "mdi-home", routes: "list" },
+        // { title: "Resumo", icon: "mdi-view-dashboard", routes: "info" },
+        // {
+        //   title: "Adicionar Projeto",
+        //   icon: "mdi-folder-plus",
+        //   routes: "projectForm",
+        // },
         {
           title: "Tarefas",
           icon: "mdi-format-list-checkbox",

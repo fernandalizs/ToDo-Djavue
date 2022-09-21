@@ -6,8 +6,9 @@ export default {
     });
   },
   createTask: (task, callback) => {
+    console.log("teste");
     axios
-      .post("http://localhost:8000/tasks/create", task)
+      .post("http://localhost:8000/tasks/create/", task)
       .then((response) => callback(response.data));
   },
   deleteTask: (task, callback) => {
