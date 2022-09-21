@@ -17,5 +17,4 @@ class Task(models.Model):
             "title": self.title,
             "project": self.project,
             "date": self.date,
-
         }

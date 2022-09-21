@@ -50,5 +50,10 @@ import PageFooter from "@/components/PageFooter.vue";
 
 export default {
   components: { PageBar, PageFooter },
+  data() {
+    return {
+      tasks: [],
+    };
+  },
 };
 </script>

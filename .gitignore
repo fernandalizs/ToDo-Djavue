@@ -4,7 +4,6 @@ node_modules
 
 
 # local env files
-.venv
 .env.local
 .env.*.local
 
@@ -22,3 +21,8 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Python stuff
+.venv
+*__pycache__
+*.sqlite3
