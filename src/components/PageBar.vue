@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-app-bar fixed color="#8C9EFF" elevate-on-scroll>
+    <v-app-bar fixed color="#448AFF" elevate-on-scroll>
       <v-app-bar-nav-icon
         color="white"
-        class="indigo accent-1"
+        class="#448AFF"
         @click.stop="drawer = !drawer"
       >
       </v-app-bar-nav-icon>
@@ -13,11 +13,13 @@
       <v-spacer></v-spacer>
 
       <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon color="white">mdi-magnify</v-icon>
       </v-btn>
 
       <v-btn icon>
-        <v-icon v-model="this.$vuetify.theme.dark">mdi-brightness-4</v-icon>
+        <v-icon v-model="this.$vuetify.theme.dark" color="white"
+          >mdi-brightness-4</v-icon
+        >
       </v-btn>
 
       <v-btn icon>

@@ -33,7 +33,7 @@
             </v-card>
           </v-col>
           <div class="my-2">
-            <v-btn color="#5C6BC0" fab dark :to="{ name: 'form' }">
+            <v-btn color="#2979FF" fab dark :to="{ name: 'form' }">
               <v-icon>mdi-plus</v-icon>
             </v-btn>
           </div>

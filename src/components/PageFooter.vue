@@ -1,6 +1,6 @@
 <template>
-  <v-footer dark padless fixed absolute color="indigo accent-1">
-    <v-card flat tile class="indigo accent-1 white--text text-center mx-auto">
+  <v-footer dark padless fixed absolute color="blue accent-2">
+    <v-card flat tile class="blue accent-2 white--text text-center mx-auto">
       <v-card-text>
         <!-- <v-btn
           v-for="icon in icons"
