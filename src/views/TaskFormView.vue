@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-bar />
-    <v-main>
+    <v-main class="pt-16 px-16">
       <v-snackbar
         v-model="snackbar.show"
         :value="true"
@@ -15,7 +15,7 @@
           {{ snackbar.message }}
         </h3>
       </v-snackbar>
-      <v-form ref="form" v-model="valid" lazy-validation>
+      <v-form ref="form" v-model="valid" lazy-validation class="px-16">
         <v-text-field
           :rules="[(v) => !!v || 'O campo tarefa é obrigatório']"
           v-model="task.title"
