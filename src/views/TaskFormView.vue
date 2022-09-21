@@ -48,6 +48,7 @@
           :loading="loading"
           color="success"
           class="mr-4"
+          @click="addTask"
         >
           Salvar
         </v-btn>
@@ -63,6 +64,8 @@
 <script>
 import PageBar from "@/components/PageBar.vue";
 import PageFooter from "@/components/PageFooter.vue";
+import TaskApi from "@/TaskApi.js";
+
 export default {
   components: { PageBar, PageFooter },
   data: () => ({
@@ -75,7 +78,11 @@ export default {
     task: { title: "", date: "" },
     project: null,
     items: ["Estudos", "Trabalho", "Financeiro", "Outros"],
-    // checkbox: false,
   }),
+  methods: {
+    addTask() {
+      TaskApi.createTask(() => {});
+    },
+  },
 };
 </script>

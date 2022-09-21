@@ -47,8 +47,29 @@
 <script>
 import PageBar from "@/components/PageBar.vue";
 import PageFooter from "@/components/PageFooter.vue";
+import TaskApi from "@/TaskApi.js";
 
 export default {
   components: { PageBar, PageFooter },
+  data() {
+    return {
+      tasks: [],
+    };
+  },
+  methods: {
+    taskList() {
+      TaskApi.getTasks((data) => {
+        this.tasks = data;
+      });
+    },
+    // deleteTasks() {
+    //   TaskApi.deleteTask(taskID, () => {
+    //     this.taskList();
+    //   });
+    // },
+  },
+  created() {
+    this.taskList();
+  },
 };
 </script>
