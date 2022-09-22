@@ -6,9 +6,12 @@ export default {
     });
   },
   createTask: (task, callback) => {
-    console.log("teste");
+    const formData = new FormData();
+    for (const k of Object.keys(task)) {
+      formData.append(k, task[k]);
+    }
     axios
-      .post("http://localhost:8000/tasks/create/", task)
+      .post("http://localhost:8000/tasks/create/", formData)
       .then((response) => callback(response.data));
   },
   deleteTask: (task, callback) => {

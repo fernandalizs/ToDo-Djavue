@@ -88,8 +88,8 @@ export default {
         date: this.task.date,
       };
       console.log(newTask);
-      TaskApi.createTask((newTask) => {
-        console.log("iuyftg", newTask);
+      TaskApi.createTask(newTask, (newTask) => {
+        console.log("task = ", newTask);
         this.$router.push({ name: "list" });
       });
       this.loading = false;
